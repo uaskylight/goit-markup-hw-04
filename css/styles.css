@@ -66,15 +66,13 @@ ul {
     border-bottom: 1px solid var(--line);
 }
 .section-main {
+
     max-width: 1600px;
     margin: auto auto;
-    
-    background-size: cover;
-    background-image:linear-gradient(to left top,  rgba(47, 48, 58, 0.4),#2F303A),
-    url(/images/svg/hero.jpg);
+    background-color: #C4C4C4;
+    background-image:linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),url(../images/hero.jpg);
     padding-top: 200px;
     padding-bottom: 200px;
-    
 }
 .logo {
     display: flex;
@@ -127,16 +125,19 @@ ul {
 .svg-icon-envelope{
     width: 16px;
     height: 12px;
-    fill:#757575;
+    fill:currentColor;
+    /* fill:#757575; */
     margin-right: 10px;
 }
+
 .svg-icon-envelope:hover{
     fill: currentColor;
 }
 .svg-icon-smartphone{
     width: 10px;
     height: 16px;
-    fill:#757575;
+    /* fill:#757575; */
+    fill:currentColor;
     margin-right: 10px;
 }
 
@@ -159,12 +160,6 @@ ul {
     display: block;
     text-align: center;
     max-width: 696px;
-}
-.section-main {
-    display: flex;
-    justify-content: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
 }
 .world-hero {
     margin-bottom: 30px;
@@ -202,16 +197,6 @@ ul {
 .about-item:not(:last-child) {
     margin-right: 30px;
 }
-/* .about-item.svg::before{
-    content: "";
-    display:block;
-    height: 120px;
-    background-size: 70px;
-    background-repeat: no-repeat;
-    background-position: center; 
-    background-color: #F5F4FA;
-    margin-bottom: 30px;
-} */
 .svg-detals{
     width: 270px;
     height: 120px;
@@ -261,6 +246,9 @@ ul {
     display: block;
     max-width: 100%;
 }
+.focus-network:visited{
+    color:#212121;
+}
 .our-networks{
     display:flex;
     justify-content: center;
@@ -269,29 +257,29 @@ ul {
     
 }
 .svg-team-list{
+    
+}
+.svg-icon-link{
     width: 44px;
     height: 44px;
     border-radius: 50%;
-}
-.svg-team-list{
-    width: 44px;
-    height: 44px;
     display: flex;
     justify-content: center;
     align-items: center;
+    color:#AFB1B8;
 }
-.svg-team-list:hover{
-    background-color: #2196F3;
+.svg-icon-link:hover{
+    background-color: #188CE8;
+    color:#ffffff;
 }
 .svg-icon{
     width: 20px;
     height: 20px;
-    fill:#AFB1B8;
+    fill:currentColor;
 }
 .svg-icon:hover{
-    fill:#ffffff;
-    
-}
+fill:currentColor; 
+} 
 .work-item:not(:last-child) {
     margin-right: 30px;
 }
@@ -336,57 +324,47 @@ ul {
     padding-top: 30px;
     padding-bottom: 30px;
 }
+.section-clients{
+     padding-top: 94px;
+     padding-bottom: 94px;
+}
 .clients-title{
     font-size: 36px;
     line-height: 1.16;
     color:var(--primary-color);
     text-align: center;
-    padding-top: 94px;
     margin-bottom: 50px;
 }
-
-.clients-list{
-    width: 170px;
-    height: 92px;
-    border-radius: 4px;
-    padding: 16px 32px;
-    border: 1px solid #AFB1B8;
-}
-.list-clients-svg{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 .clients-link{
-    display: inline-flex;
-    padding-bottom: 67px;
-    justify-content: center;
+    display:flex;
     gap: 30px;
-    /* outline: 2px solid red; */
 }
 .svg-clients{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 170px;
-    height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
 }
-.svg-clients:hover{
+.svg-clients-link{
+     display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 170px;
+    height: 92px;
+    color:#AFB1B8;
+}
+.svg-clients-link:hover{
     border: 1px solid #2196F3;
     box-shadow: 0px 2px 2px 1px rgba(2,0,0,0.12);
+    color:#2196F3; 
 }
 .svg-clients-list{
-    width: 160px;
+    width: 106px;
     height: 60px;
-    fill:#afb1b8;
+    fill:currentColor;
 }
-
 .svg-clients-list:hover{
-    fill:#2196F3;
+    fill:currentColor;
 }
-
 .footer-bottom {
     background-color:var(--footer);
     padding-top: 60px;
@@ -413,9 +391,10 @@ ul {
     color:#FFFFFF;
 }
 /*-------------------- portfolio-------------------- */
-
 .work-item-prtf:hover,
-.work-item-prtf:focus{
+.work-item-prtf:focus,
+.focus-network:focus,
+.focus-network:hover{
     box-shadow: 1px 6px 4px 1px rgba(0,0,0,0.16);
     
 }
@@ -505,4 +484,21 @@ ul {
 }
 .svg-footer{
     background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+.svg-icon-footer{
+    color:#ffffff;
+}
+.svg-icon-link:hover{
+    background-color: #188CE8;
+    color:#ffffff;
+}
+.svg-icon{
+    fill:currentColor;
+}
+.svg-icon:hover{
+fill:currentColor; 
+} 
+.svg-link-footer_{
+    color: #ffffff;
 }
