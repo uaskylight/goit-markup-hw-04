@@ -351,7 +351,6 @@ fill:currentColor;
 .svg-clients-link:hover,
 .svg-clients-link:focus{
     border-color:var(--logo-web);
-    box-shadow: 0px 2px 2px 1px rgba(2,0,0,0.12);
     color:var(--logo-web); 
 }
 .svg-clients-list{
@@ -440,6 +439,7 @@ fill:currentColor;
     font-size: 18px;
     line-height: 2.0;
     letter-spacing: 0.06em;
+    color:var(--primary-color)
 }
 .prtf-item {
     color: var(--secondary-color);
